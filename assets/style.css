@@ -1,3 +1,122 @@
+/**
+ * Reset
+ */
+ body {
+     margin: 0;
+ }
+
+/**
+ * Typography
+ */
+ body {}
+ 
+ h1,
+ h2 {}
+ 
+ a {}
+ a:hover {}
+ 
+/* Text meant only for screen readers. */
+.screen-reader {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+  }
+  .screen-reader:focus {
+    background-color: #eee;
+    clip: auto !important;
+    clip-path: none;
+    color: #444;
+    display: block;
+    font-size: 1em;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar. */
+  }
+/**
+ * Layout
+ * Uniquement pour le positionnement sans les styles graphique
+ */
 .container {
     max-width: 1310px;
+    margin: auto;
+}
+
+.grid{
+display: grid;
+}
+
+/**
+ * Composents
+ */
+
+ /* Bouton */
+ .bouton {
+     padding: 10px;
+     border-radius: 8px;
+     background-color: lightblue;
+     color: black;
+ }
+ .button--light {
+     background-color: white;
+ }
+ .button--blue {
+     background-color: blue;
+     color: white;
+ }
+
+ /* Section title */
+ .section-title {
+     color: inherit;
+ }
+
+ 
+/**
+ * Class utilitaire
+ */
+ .has-orange-background {
+     background-color: orange;
+ }
+ .has-blue-background {
+     background-color: blue;
+     color: white;
+ }
+
+@media screen and (min-width:940px) {
+    #hisoitre .grid{
+    grid-template-columns:1fr 2fr;
+}
+
+    #diplomes .grid{
+    grid-template-columns:repeat(3, 1fr);  
+}
+
+    #competences .grid{
+    grid-template-columns:repeat(4, 1fr);  
+}
+
+    #loisirs .grid{
+    grid-template-columns:2fr, 1fr;  
+}
+
+    #productions .grid{
+    grid-template-columns:repeat(3, 1fr);  
+}
+
+    #contact .grid{
+    grid-template-columns:1fr, 1fr;  
+}
+
 }
