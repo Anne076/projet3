@@ -49,6 +49,21 @@
  * Layout
  * Uniquement pour le positionnement sans les styles graphique
  */
+
+ /* barre menu honrizontal */
+ #main-menu {
+	padding: 0; margin: 0;
+	text-align: left;
+}
+#main-menu li {
+	display: inline;
+	list-style: none;
+}
+#main-menu a {
+	display:inline-block;
+	margin: 0 15px;
+}
+
 .container {
     max-width: 1310px;
     margin: auto;
@@ -59,7 +74,7 @@ display: grid;
 }
 
 /**
- * Composents
+ * Composants
  */
 
  /* Bouton */
@@ -77,20 +92,39 @@ display: grid;
      color: white;
  }
 
+  /* barre menu horizontal color */
+
+  #main-menu{
+    background-color:#a7a8d9;
+    color: white;
+}
+
+footer{
+    background-color:#a7a8d9;
+    color: white;
+}
+
  /* Section title */
  .section-title {
      color: inherit;
  }
 
  
+
+ 
 /**
  * Class utilitaire
  */
  .has-orange-background {
-     background-color: orange;
+     background-color: #f2b84b;
  }
+
+ .has-white-background {
+    background-color: white;
+}
+
  .has-blue-background {
-     background-color: blue;
+     background-color:#637abf;
      color: white;
  }
 
