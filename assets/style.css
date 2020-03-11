@@ -64,6 +64,10 @@
 	margin: 0 15px;
 }
 
+header{
+    display: flex;
+}
+ 
 .container {
     max-width: 1310px;
     margin: auto;
@@ -94,8 +98,18 @@ display: grid;
 
   /* barre menu horizontal color */
 
-  #main-menu{
+  header{
     background-color:#a7a8d9;
+    color: white;
+    display: flex;
+}
+
+img{
+    margin-left: auto;
+}
+
+.svg-inline--fa {
+    font-size: inherit;
     color: white;
 }
 
@@ -104,14 +118,23 @@ footer{
     color: white;
 }
 
+
  /* Section title */
  .section-title {
      color: inherit;
  }
 
- 
+/* Section accueil */
+ #accueil{
+    background-image:url("/assets/images/anneaccueil7-min.jpg");
+    color: white;
+}
 
- 
+#histoire{
+    display: flex;
+}
+
+
 /**
  * Class utilitaire
  */
