@@ -6,8 +6,11 @@
  }
 
 /**
- * Typography
+ * Base
  */
+
+ /* Typography*/
+
  body {}
  
  h1,
@@ -15,6 +18,11 @@
  
  a {}
  a:hover {}
+
+ /* media */ 
+img{
+    max-width:100%;
+}
  
 /* Text meant only for screen readers. */
 .screen-reader {
@@ -66,15 +74,18 @@
 
 header{
     display: flex;
+    align-items: center;
 }
  
-.container {
+.container,
+.grid {
     max-width: 1310px;
     margin: auto;
 }
 
 .grid{
-display: grid;
+    display: grid;
+    grid-gap: 30px;
 }
 
 /**
@@ -120,6 +131,11 @@ footer{
 
 
  /* Section title */
+
+ section{
+     padding: 1em;
+ }
+
  .section-title {
      color: inherit;
  }
@@ -127,11 +143,39 @@ footer{
 /* Section accueil */
  #accueil{
     background-image:url("/assets/images/anneaccueil7-min.jpg");
+    background-position: left bottom;
+    background-size: cover;
     color: white;
+    min-height: 33vh;
+}
+
+
+/*section diplome*/
+
+.list-item{
+    display: flex;
+}
+
+.competence-list{
+    position: relative;
+    max-width: 720px;
+    margin: auto;
+}
+.list-icon{
+    margin-right: 1em;
+    position: relative;
+    z-index: 1;
+}
+  
+.list-content{
+   
+}
+
+.date{
+    color: #637abf;
 }
 
 #histoire{
-    display: flex;
 }
 
 
@@ -152,7 +196,14 @@ footer{
  }
 
 @media screen and (min-width:940px) {
-    #hisoitre .grid{
+    header {
+        position: fixed;
+        width: 100%;
+    }
+    #accueil {
+        min-height: 80vh;
+    }
+    #histoire .grid{
     grid-template-columns:1fr 2fr;
 }
 
