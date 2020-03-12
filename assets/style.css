@@ -146,16 +146,38 @@ footer{
     background-position: left bottom;
     background-size: cover;
     color: white;
-    min-height: 33vh;
+    display: flex;
+    align-items: center;
 }
 
+.section-content {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 2em;
+    text-align: center;
+    background-color: rgba(99, 122, 191, .6);
+    font-size: 1.8em;
+    line-height: 1;
+}
 
+.section-content h1 {
+font-size: 2em;
+}
+.section-content h1,
+.section-content p {
+    margin: .5em;
+    text-shadow: 0 0 2px rgb(99, 122, 191);
+}
 /*section diplome*/
 
 .list-item{
     display: flex;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
-
+.list-item h4 {
+    margin: 0;
+}
 .competence-list{
     position: relative;
     max-width: 720px;
@@ -176,6 +198,19 @@ footer{
 }
 
 #histoire{
+}
+
+/**
+ * PAGES
+*/
+article {
+    width: 90%;
+    max-width: 720px;
+    margin: auto;
+
+}
+main{
+    padding-top: 80px;   
 }
 
 
