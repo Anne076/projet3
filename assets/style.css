@@ -11,11 +11,26 @@
 
  /* Typography*/
 
- body {}
- 
- h1,
- h2 {}
- 
+ h4{
+     font-size:25px;
+ }
+
+ h3{
+     font-size: 27px;
+ }
+
+ h2{
+     font-size: 40px;
+ }
+
+ p{
+     font-size: 20px;
+ }
+
+.date{
+    font-size: 27px;
+}
+
  a {}
  a:hover {}
 
@@ -107,6 +122,20 @@ header{
      color: white;
  }
 
+ /*photo loisir*/
+
+ .photo-plonge{
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 10%;
+ }
+
+ #loisirs{
+     display:flex;
+     align-items: center;
+     justify-content: center;
+ }
+
   /* barre menu horizontal color */
 
   header{
@@ -170,6 +199,12 @@ font-size: 2em;
 }
 /*section diplome*/
 
+#diplomes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .list-item{
     display: flex;
     margin-top: 1em;
@@ -208,9 +243,6 @@ article {
     max-width: 720px;
     margin: auto;
 
-}
-main{
-    padding-top: 80px;   
 }
 
 
