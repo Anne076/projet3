@@ -39,6 +39,11 @@ img{
     max-width:100%;
 }
  
+.section-title-boutton{
+    display: flex;
+    justify-content: center;
+}
+
 /* Text meant only for screen readers. */
 .screen-reader {
     border: 0;
@@ -162,6 +167,10 @@ img{
 footer{
     background-color:#a7a8d9;
     color: white;
+}
+
+footer{
+    display:flex;
 }
 
 
