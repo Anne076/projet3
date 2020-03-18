@@ -203,7 +203,7 @@ footer{
 
 /* Section accueil */
  #accueil{
-    background-image:url("/assets/images/anneaccueil7-min.jpg");
+    background-image:url("images/anneaccueil7-min.jpg");
     background-position: left bottom;
     background-size: cover;
     color: white;
