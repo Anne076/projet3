@@ -332,9 +332,9 @@ color: black;
     grid-template-columns:repeat(4, 1fr);  
 }
 
-    #loisirs .grid{
-    grid-template-columns:2fr 1fr;  
-}
+    #loisirs{
+    flex-direction:column;
+    }
 
     #productions .grid{
     grid-template-columns:repeat(3, 1fr);  
