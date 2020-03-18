@@ -154,12 +154,6 @@ header{
     padding-left: 10%;
  }
 
- #loisirs{
-     display:flex;
-     align-items: center;
-     justify-content: center;
-     flex-direction: column;
- }
 
   /* barre menu horizontal color */
 
@@ -333,8 +327,8 @@ color: black;
     grid-template-columns:repeat(4, 1fr);  
 }
 
-    #loisirs {
-    flex-direction: row;
+    #loisirs .grid{
+    grid-template-columns: 2fr 1fr;f
     }
 
     #productions .grid{
