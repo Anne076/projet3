@@ -11,6 +11,17 @@
 
  /* Typography*/
 
+ body{
+     font-family:'Quicksand', sans-serif;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4{
+     font-family:'Cardo', serif;
+ }
+
  h4{
      font-size:25px;
  }
@@ -31,7 +42,11 @@
     font-size: 27px;
 }
 
- a {}
+ a {
+     color:inherit;
+
+ }
+     
  a:hover {}
 
  /* media */ 
@@ -151,7 +166,7 @@ header{
     background-color:#a7a8d9;
     color: white;
     display: flex;
-    
+    z-index: 1000; 
 }
 
 
@@ -169,13 +184,11 @@ footer{
     background-color:#a7a8d9;
     color: white;
     display:flex;
-    
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
 }
 
-footer{ 
-    display: grid;
-    grid-template-columns: 18fr 0.5fr;
-}
 
  /* Section title */
 
@@ -256,13 +269,32 @@ font-size: 2em;
 /**
  * PAGES
 */
-article {
+.post {
     width: 90%;
     max-width: 720px;
     margin: auto;
-
+    padding-top: 80px;
 }
 
+.post-nav__prev,
+.post-nav__next{
+position: fixed;
+top: 50%;
+transform: translateY(-50%);
+}
+
+.post-nav__prev{
+    left: 40px;
+}
+
+.post-nav__next{
+    right: 40px;
+}
+
+.post-nav__prev svg,
+.post-nav__next svg{
+color: black;
+}
 
 /**
  * Class utilitaire
