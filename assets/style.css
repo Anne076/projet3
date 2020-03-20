@@ -10,7 +10,7 @@
  * Reset
  */
 
- body {
+body {
      margin: 0;
  }
 
@@ -21,30 +21,30 @@
 
  /* Typography*/
 
- body{
+body{
      font-family:'Quicksand', sans-serif;
  }
 
- h1,
- h2,
- h3,
- h4{
+h1,
+h2,
+h3,
+h4{
      font-family:'Cardo', serif;
  }
 
- h4{
+h4{
      font-size:25px;
  }
 
- h3{
+h3{
      font-size: 27px;
  }
 
- h2{
+h2{
      font-size: 40px;
  }
 
- p{
+p{
      font-size: 20px;
  }
 
@@ -56,7 +56,7 @@
     color: #637abf;
 }
 
- a {
+a {
      color:inherit;
  }
      
@@ -75,6 +75,7 @@ img{
     font-size: inherit;
     color: white;
 }
+
 
 /* Text meant only for screen readers. */
 
@@ -116,7 +117,7 @@ img{
 
  /* Barre menu honrizontal */
 
- #main-menu {
+#main-menu {
 	padding: 0; margin: 0;
 	text-align: left;
 }
@@ -132,6 +133,7 @@ img{
     text-decoration: none;
     color: white;
 }
+
 
 /* Header */
 
@@ -180,23 +182,23 @@ footer{
 
  /* Bouton */
 
- .bouton {
+.bouton {
      padding: 10px;
      border-radius: 8px;
      background-color: lightblue;
      color: black;
  }
 
- .button--light {
+.button--light {
      background-color: white;
  }
 
- .button--blue {
+.button--blue {
      background-color: blue;
      color: white;
  }
 
- .section-title-boutton{
+.section-title-boutton{
     display: flex;
     justify-content: center;
 }
@@ -206,18 +208,18 @@ footer{
 
  /* Section title */
 
- section{
+section{
      padding: 1em;
  }
 
- .section-title {
+.section-title {
      color: inherit;
  }
 
 
 /* Section accueil */
 
- #accueil{
+#accueil{
     background-image:url("images/anneaccueil7-min.jpg");
     background-position: left bottom;
     background-size: cover;
@@ -240,7 +242,7 @@ footer{
 }
 
 .section-content h1 {
-font-size: 2em;
+    font-size: 2em;
 }
 
 .section-content h1,
@@ -257,6 +259,7 @@ font-size: 2em;
     align-items: center;
     justify-content: center;
 }
+
 
 /* Item List */
 
@@ -298,9 +301,9 @@ font-size: 2em;
 
 .post-nav__prev,
 .post-nav__next{
-position: fixed;
-top: 50%;
-transform: translateY(-50%);
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .post-nav__prev{
@@ -313,7 +316,7 @@ transform: translateY(-50%);
 
 .post-nav__prev svg,
 .post-nav__next svg{
-color: black;
+    color: black;
 }
 
 
@@ -323,15 +326,15 @@ color: black;
 
  /* Background */
 
- .has-orange-background {
+.has-orange-background {
      background-color: #f2b84b;
  }
 
- .has-white-background {
+.has-white-background {
     background-color: white;
 }
 
- .has-blue-background {
+.has-blue-background {
      background-color:#637abf;
      color: white;
  }
@@ -340,6 +343,7 @@ color: black;
  /* Media Query */
 
 @media screen and (min-width:940px) {
+
     header {
         position: fixed;
         width: 100%;
@@ -350,27 +354,27 @@ color: black;
     }
 
     #histoire .grid{
-    grid-template-columns:1fr 2fr;
+        grid-template-columns:1fr 2fr;
     }
 
     #diplomes .grid{
-    grid-template-columns:repeat(3, 1fr);  
+        grid-template-columns:repeat(3, 1fr);  
     }
 
     #competences .grid{
-    grid-template-columns:repeat(4, 1fr);  
+        grid-template-columns:repeat(4, 1fr);  
     }
 
     #loisirs .grid{
-    grid-template-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
     }
 
     #productions .grid{
-    grid-template-columns:repeat(3, 1fr);  
+        grid-template-columns:repeat(3, 1fr);  
     }
 
     #contact .grid{
-    grid-template-columns:1fr 1fr;  
+        grid-template-columns:1fr 1fr;  
     }
 }
 
