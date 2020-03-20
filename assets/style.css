@@ -1,12 +1,22 @@
+/*!
+*Feuille de Style principale
+*Autor: Anne Taillandier
+*Github: https://https://github.com/Anne076/projet3
+* Ce projet repose sur une convention d'écriture BEM
+*/
+
+
 /**
  * Reset
  */
+
  body {
      margin: 0;
  }
 
+
 /**
- * Base
+ * GLOBAL
  */
 
  /* Typography*/
@@ -42,25 +52,32 @@
     font-size: 27px;
 }
 
+.date{
+    color: #637abf;
+}
+
  a {
      color:inherit;
-
  }
      
- a:hover {}
-
+ 
  /* media */ 
+
 img{
     max-width:100%;
 }
- 
-.section-title-boutton{
-    display: flex;
-    justify-content: center;
+
+img{
+    margin-left: auto;
 }
 
+.svg-inline--fa {
+    font-size: inherit;
+    color: white;
+}
 
 /* Text meant only for screen readers. */
+
 .screen-reader {
     border: 0;
     clip: rect(1px, 1px, 1px, 1px);
@@ -73,7 +90,8 @@ img{
     width: 1px;
     word-wrap: normal !important;
   }
-  .screen-reader:focus {
+
+.screen-reader:focus {
     background-color: #eee;
     clip: auto !important;
     clip-path: none;
@@ -89,20 +107,25 @@ img{
     width: auto;
     z-index: 100000; /* Above WP toolbar. */
   }
+
+  
 /**
  * Layout
  * Uniquement pour le positionnement sans les styles graphique
  */
 
- /* barre menu honrizontal */
+ /* Barre menu honrizontal */
+
  #main-menu {
 	padding: 0; margin: 0;
 	text-align: left;
 }
+
 #main-menu li {
 	display: inline;
 	list-style: none;
 }
+
 #main-menu a {
 	display:inline-block;
     margin: 0 15px;
@@ -110,11 +133,35 @@ img{
     color: white;
 }
 
+/* Header */
+
 header{
     display: flex;
     align-items: center;
 }
+
+header{
+    background-color:#a7a8d9;
+    color: white;
+    display: flex;
+    z-index: 1000; 
+}
  
+
+/* Footer */ 
+
+footer{
+    background-color:#a7a8d9;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+
+/* Container grid */
+
 .container,
 .grid {
     max-width: 1310px;
@@ -132,51 +179,30 @@ header{
  */
 
  /* Bouton */
+
  .bouton {
      padding: 10px;
      border-radius: 8px;
      background-color: lightblue;
      color: black;
  }
+
  .button--light {
      background-color: white;
  }
+
  .button--blue {
      background-color: blue;
      color: white;
  }
 
-
-
-  /* barre menu horizontal color */
-
-  header{
-    background-color:#a7a8d9;
-    color: white;
+ .section-title-boutton{
     display: flex;
-    z-index: 1000; 
+    justify-content: center;
 }
+ 
 
-
-
-img{
-    margin-left: auto;
-}
-
-.svg-inline--fa {
-    font-size: inherit;
-    color: white;
-}
-
-footer{
-    background-color:#a7a8d9;
-    color: white;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px;
-}
-
+/** Section **/
 
  /* Section title */
 
@@ -188,7 +214,9 @@ footer{
      color: inherit;
  }
 
+
 /* Section accueil */
+
  #accueil{
     background-image:url("images/anneaccueil7-min.jpg");
     background-position: left bottom;
@@ -197,6 +225,9 @@ footer{
     display: flex;
     align-items: center;
 }
+
+
+/* Section content */
 
 .section-content {
     margin-left: 50%;
@@ -211,11 +242,14 @@ footer{
 .section-content h1 {
 font-size: 2em;
 }
+
 .section-content h1,
 .section-content p {
     margin: .5em;
     text-shadow: 0 0 2px rgb(99, 122, 191);
 }
+
+
 /*section diplome*/
 
 #diplomes{
@@ -224,39 +258,37 @@ font-size: 2em;
     justify-content: center;
 }
 
+/* Item List */
+
 .list-item{
     display: flex;
     margin-top: 1em;
     margin-bottom: 1em;
 }
+
 .list-item h4 {
     margin: 0;
 }
+
 .competence-list{
     position: relative;
     max-width: 720px;
     margin: auto;
 }
+
 .list-icon{
     margin-right: 1em;
     position: relative;
     z-index: 1;
 }
   
-.list-content{
-   
-}
-
-.date{
-    color: #637abf;
-}
-
-#histoire{
-}
 
 /**
  * PAGES
 */
+
+/* Post nav */
+
 .post {
     width: 90%;
     max-width: 720px;
@@ -284,9 +316,13 @@ transform: translateY(-50%);
 color: black;
 }
 
+
 /**
  * Class utilitaire
  */
+
+ /* Background */
+
  .has-orange-background {
      background-color: #f2b84b;
  }
@@ -300,36 +336,44 @@ color: black;
      color: white;
  }
 
+
+ /* Media Query */
+
 @media screen and (min-width:940px) {
     header {
         position: fixed;
         width: 100%;
     }
+
     #accueil {
         min-height: 80vh;
     }
+
     #histoire .grid{
     grid-template-columns:1fr 2fr;
-}
+    }
 
     #diplomes .grid{
     grid-template-columns:repeat(3, 1fr);  
-}
+    }
 
     #competences .grid{
     grid-template-columns:repeat(4, 1fr);  
-}
+    }
 
     #loisirs .grid{
-    grid-template-columns: 2fr 1fr;f
+    grid-template-columns: 2fr 1fr;
     }
 
     #productions .grid{
     grid-template-columns:repeat(3, 1fr);  
-}
+    }
 
     #contact .grid{
     grid-template-columns:1fr 1fr;  
+    }
 }
 
-}
+
+
+
